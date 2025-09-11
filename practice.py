@@ -1,4 +1,4 @@
-full_name = "John Doe"
+"""full_name = "John Doe"
 print(full_name.replace("John", "Jane"))  # Output: Jane Doe
 print("What is your name?")
 my_name = input()
@@ -35,10 +35,33 @@ numbers.append(6)
 numbers.insert(0, 0)
 print(numbers)
 
-customer = {
+customer = { #must use :
     "name" : "John Smith", #key:value
     "age" : 30,
     "verified" : True
 }
 print(customer["name"])
 print(customer["age"])
+customer["name"] = "Jane Smith" #updates value 
+print(customer["name"])
+
+def greet_user(first_name, last_name): #parameters
+    print("Hi " + first_name + " " + last_name)
+greet_user("John", "Smith") #arguments
+
+def add_numbers(a, b):
+    return a + b  # send result back
+
+result = add_numbers(5, 3)
+print(result) #8"""
+
+try:
+ age = int(input('Age: '))
+ income = 20000
+ risk = income / age
+ print(age)
+ print(risk)
+except ValueError:
+ print('Not a valid number')
+except ZeroDivisionError:
+ print('Age cannot be 0')
