@@ -56,12 +56,12 @@ result = add_numbers(5, 3)
 print(result) #8"""
 
 try:
- age = int(input('Age: '))
- income = 20000
- risk = income / age
- print(age)
- print(risk)
+    age = int(input('Age: '))
+    income = 20000
+    risk = income / age
+    print(age)
+    print(risk)
 except ValueError:
- print('Not a valid number')
+    print('Not a valid number')
 except ZeroDivisionError:
- print('Age cannot be 0')
+    print('Age cannot be 0')
