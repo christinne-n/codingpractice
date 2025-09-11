@@ -1,14 +1,44 @@
-#.replace == replaces all occurrences of a substring with another substring
-#.upper == converts all characters in a string to uppercase
-#.lower == converts all characters in a string to lowercase
-#.len == returns the length of a string (number of characters)
-#multiline strings == use triple quotes (''' or """) to create strings that span multiple lines
-#slices == use [start:end] to extract a substring from a string (start index is inclusive, end index is exclusive)
-
 full_name = "John Doe"
 print(full_name.replace("John", "Jane"))  # Output: Jane Doe
 print("What is your name?")
-my_name=input()
+my_name = input()
 print("Hello " + my_name)
 print(my_name[4])
 print(my_name[0:3])
+birth_year = int(input("Enter your birth year: ")) #takes input and converts to integer
+print("your birth year is " + str(birth_year)) #converts integer to string for concatenation
+
+
+is_hot = False
+is_cold = True
+
+if is_hot:
+ print("hot day")
+elif is_cold:
+ print("cold day")
+else:
+ print("beautiful day") 
+ 
+
+i = 1
+while i < 5:
+    print(i)
+    i += 1
+    
+for i in range(1, 10, 2):
+    print(i)
+    
+numbers = [1, 2, 3, 4, 5]
+print(numbers[0])
+print(numbers[-1])
+numbers.append(6)
+numbers.insert(0, 0)
+print(numbers)
+
+customer = {
+    "name" : "John Smith", #key:value
+    "age" : 30,
+    "verified" : True
+}
+print(customer["name"])
+print(customer["age"])
